@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-/*
- h1 {
- color:red;
- font-size: 10vw;
- background-color:yellow;
- }
- */
- 
-/* #firstElement{
-  color:red;
- font-size: 10vw;
- background-color:yellow;
- }
-*/
 
-.one{
- color:red;
- font-size: 10vw;
- background-color:yellow;
-}
-</style>
+<head>
+  <style>
+    /* CSS selecter by tagname, this will select all <h1>  tags*/
+    /*tagname has lowest priority*/
+    h1 {
+      color: red;
+      font-size: 10vw;
+      background-color: yellow;
+    }
+ /*More priority to last line/ greater line number*/
+    h1 {
+      color: blueviolet;
+    }
+
+    /* CSS selecter by Id, this will select all elements that has id="firstElement", we write hash followed by ID of the element. */
+    /*Id selector has most priority*/
+
+    /* #firstElement {
+      color: blue;
+      font-size: 10vw;
+      background-color: yellow;
+    } */
+
+    /* CSS selecter by class, this will select all elements that has class="firstElement", we write dot (.) followed by class of the element. */
+    /*Second priority, after ID.*/
+
+    /* .one {
+      color: green;
+      font-size: 10vw;
+      background-color: yellow;
+    } */
+  </style>
 
 </head>
-<body>
-  
-<h1 class="one"  id="firstElement">My First CSS Example</h1>
-<h1 class="one" >My First CSS Example</h1>
-<h1 class="one" >My First CSS Example</h1>
 
-<p>This is a paragraph.</p>
-<h1 >My First CSS Example</h1>
+<body>
+
+  <h1 class="one" id="firstElement"> firstElement </h1>
+  <h1 class="one">My First CSS Example</h1>
+  <h1 class="one">My First CSS Example</h1>
+
+  <p>This is a paragraph.</p>
+  <h1>My First CSS Example</h1>
 
 </body>
+
 </html>
